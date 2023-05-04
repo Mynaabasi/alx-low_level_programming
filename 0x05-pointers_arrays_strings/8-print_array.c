@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_array - prints n element of an array of integers
- * @a: intto check
+ * @a: int to check
  * @n: int to check
  * Return: Always 0.
  */
@@ -15,5 +15,6 @@ void print_array(int *a, int n)
 			printf("%d", a[x]);
 		else
 			printf("%d", a[x]);
-	printf("\n";
-			}
+	printf("\n");
+	;
+}
