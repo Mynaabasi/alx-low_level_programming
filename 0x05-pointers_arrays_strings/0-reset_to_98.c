@@ -2,12 +2,18 @@
 #include <stdio.h>
 
 /**
- * updateValue - Placing a pointer at int to update its value.
- * pointer - Showing deferencing.
- * Return: Always 0
+ * reset_to_98 - Write a function that takes a pointer to update its value
+ * @n - an integer
+ *
+ * Return: Always 0.
  */
-void updateValue(int *pointer);
+void reset_to_98(int *n)
 {
-	*pointer = 98;
+	int n;
+
+	n = 402;
+	printf("%d\n", n);
+	reset_to_98(&n);
+	printf("The value of n is now %p\n", &n);
 	return (0);
 }
