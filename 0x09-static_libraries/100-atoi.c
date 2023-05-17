@@ -8,13 +8,13 @@
  */
 int _atoi(char *s)
 {
-	int sign = l, i = 0;
+	int sign = i, i = 0;
 	unsigned int res = 0;
 
 	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
 	{
 		if (s[i] == '-')
-			sign *= -l;
+			sign *= -i;
 		i++;
 	}
 	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
