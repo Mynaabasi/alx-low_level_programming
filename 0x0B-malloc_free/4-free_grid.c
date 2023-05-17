@@ -1,12 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
-/**
- * free_grid - it gives a grid, makes space available and
- * frees up space.
- * @grid: takes in width of grid
- * @height: This is the height of the grid
- * Return: free grid
- */
 
+/**
+ * free_grid - frees 2 dimensional array
+ * @grid: 2 dimensional grid
+ * @height: height dimension of grid
+ * Description: free the memory of its grid
+ * Return: nothing.
+ */
 void free_grid(int **grid, int height)
 {
 	int i;
@@ -15,6 +17,5 @@ void free_grid(int **grid, int height)
 	{
 		free(grid[i]);
 	}
-
 	free(grid);
 }
